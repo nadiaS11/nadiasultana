@@ -13,17 +13,14 @@ module.exports = {
 
   deploy: {
     production: {
-      // SSH connection
       user: 'root',
       host: '31.97.56.77',
       ref: 'origin/main',
       repo: 'https://github.com/nadiaS11/nadiasultana.git',
       path: '/var/www/nadiasultana',
-
-      // Commands to run on the server
       'pre-deploy-local': '',
       'post-deploy':
-        'npm install && npm run build && pm2 reload ecosystem.config.js --env production',
+        'npm install && npm run build && pm2 reload ecosystem.config.cjs --env production',
       'pre-setup': '',
     },
   },
