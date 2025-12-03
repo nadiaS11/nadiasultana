@@ -17,7 +17,7 @@ module.exports = {
       user: 'root',
       host: '31.97.56.77',
       ref: 'origin/main',
-      repo: 'git@github.com:nadiaS11/nadiasultana.git',
+      repo: 'https://github.com/nadiaS11/nadiasultana.git',
       path: '/var/www/nadiasultana',
 
       // Commands to run on the server
