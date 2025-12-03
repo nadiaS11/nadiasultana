@@ -75,6 +75,7 @@ export default async function Page({ params: paramsPromise }: Args) {
       {draft && <LivePreviewListener />}
 
       <RenderHero {...hero} />
+      <div>Production deploy with script</div>
       <RenderBlocks blocks={layout} />
     </article>
   )
